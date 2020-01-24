@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5
 #DEBUG = False
 DEBUG = False
 
-ALLOWED_HOSTS = ["holefixtime.herokuapp.com"]
+ALLOWED_HOSTS = ["holefix.herokuapp.com"]
 
 
 # Application definition
