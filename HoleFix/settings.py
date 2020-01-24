@@ -24,9 +24,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = False
 
-ALLOWED_HOSTS = ["10.0.0.219", "73.2.227.126", "127.0.0.1", "localhost", "raspberrypi"]
+ALLOWED_HOSTS = ["holefixtime.herokuapp.com"]
 
 
 # Application definition
