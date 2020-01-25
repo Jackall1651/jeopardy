@@ -11,24 +11,21 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-cwd = os.getcwd()
-if cwd == '/app' or cwd[:4] == '/tmp':
-    import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.config(default='postgres://localhost')
-    }
+import dj_database_url
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://localhost')
+}
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
-    ALLOWED_HOSTS = ["holefix.herokuapp.com"]
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    # Quick-start development settings - unsuitable for production
-    # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-    # SECURITY WARNING: keep the secret key used in production secret!
-  
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+ALLOWED_HOSTS = ["holefix.herokuapp.com"]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
+# SECURITY WARNING: keep the secret key used in production secret!
 
     # SECURITY WARNING: don't run with debug turned on in production!
-    #DEBUG = False
+#DEBUG = False
 DEBUG = False
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5(k%y=$6o**6&)b3v*6_=')
