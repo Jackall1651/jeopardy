@@ -24,13 +24,13 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     # Quick-start development settings - unsuitable for production
     # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
     # SECURITY WARNING: keep the secret key used in production secret!
-    #SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5(k%y=$6o**6&)b3v*6_=')
+  
 
     # SECURITY WARNING: don't run with debug turned on in production!
     #DEBUG = False
 DEBUG = False
 
-
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5(k%y=$6o**6&)b3v*6_=')
 
 # Application definition
 
