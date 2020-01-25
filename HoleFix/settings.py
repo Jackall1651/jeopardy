@@ -26,7 +26,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
-DEBUG = False
+DEBUG = True
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's3u%n%tc*2o*#x*-u_chvt-7dk^xc5(k%y=$6o**6&)b3v*6_=')
 
