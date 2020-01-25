@@ -18,7 +18,8 @@ if cwd == '/app' or cwd[:4] == '/tmp':
         'default': dj_database_url.config(default='postgres://localhost')
     }
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
     ALLOWED_HOSTS = ["holefix.herokuapp.com"]
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     # Quick-start development settings - unsuitable for production
